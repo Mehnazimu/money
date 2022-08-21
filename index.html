@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="m-8 p-8 place-content-center">
+    <h1 class="text-2xl text-center font-bold mb-8">Money Master</h1>
+    <section class="mt-8">
+        <div>
+            <div class="flex w-full">
+                <div class="grid  flex-grow card bg-base-300 rounded-box place-items-center"><img class=""
+                        src="images/calculator.webp" alt="">
+                </div>
+                <div class="divider divider-horizontal"></div>
+                <div class="grid  flex-grow card bg-base-100 rounded-box place-items-center w-auto">
+                    <h1 class="text-xl text-center font-bold ">Income</h1>
+                    <div class="form-control ">
+                        <label class="input-group input-group-sm">
+                            <span class="text-lg font-bold">Income</span>
+                            <input id="income-input-field" type="text" placeholder="Type here"
+                                class="input input-bordered input-sm" />
+                        </label>
+                    </div>
+                    <h1 class="text-xl text-center font-bold m-0 p-0 ">Expenses</h1>
+                    <div class="form-control">
+                        <label class="input-group input-group-sm">
+                            <span class="text-lg font-bold">Food:</span>
+                            <input id="food-cost" type="text" placeholder="Type here"
+                                class="input input-bordered input-sm" />
+                        </label>
+                    </div>
+                    <div class="form-control">
+                        <label class="input-group input-group-sm">
+                            <span class="text-lg font-bold">Rent:</span>
+                            <input id="rent-cost" type="text" placeholder="Type here"
+                                class="input input-bordered input-sm" />
+                        </label>
+                    </div>
+                    <div class="form-control p-0">
+                        <label class="input-group input-group-sm">
+                            <span class="text-lg font-bold">Cloths:</span>
+                            <input id="cloths-cost" type="text" placeholder="Type here"
+                                class="input input-bordered input-sm" />
+                        </label>
+                    </div>
+                    <button id="btn-calculate" class="btn btn-active">Calculate</button>
+                    <div>
+                        <h2 class="text-lg font-bold mb-3">Total Expenses: <span id="total-expenses">0</span></h2>
+
+
+                        <h2 class="text-lg font-bold text-center">Balance: <span id="balance">0</span></h2>
+                    </div>
+                    <div>
+                        <span class="text-lg font-bold">save:</span>
+                        <input id="savings" class="input input-bordered input-sm" placeholder="savings rate"
+                            type="text">
+                        <span>%</span>
+                        <button id="btn-save" class="btn btn-active">save</button>
+                    </div>
+                    <div>
+                        <h2 class="text-lg font-bold mb-3 text-center">Saving Amount: <span id="saving-Amount">0</span>
+                        </h2>
+                        <h2 class="text-lg font-bold text-center">Remaining Balance:
+                            <span id="remaining-balance">0</span>
+                        </h2>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/money.js"></script>
+</body>
+
+</html>
